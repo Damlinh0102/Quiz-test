@@ -1,0 +1,183 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+body {
+    font-size: 18px;
+    color: #222222;
+    width: 700px;
+    margin: auto;
+    font-family: 'Proxima Nova','Helvetica','Arial', sans-serif;
+}
+header {
+    height: 80px;
+    border-bottom: 1px #ccc solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.stack-circle {
+    float: right;
+}
+.stack-circle > div{
+    line-height: 50px;
+    width: 50px;
+    background-color: #ffee00;
+    font-weight: bold;
+    border-radius: 100%;
+    transform: rotate(-30deg);
+    display: inline-block;
+}
+#course-name {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #ee3322;
+}
+#quiz-name {
+    width: 700px;
+    height: 425px;
+    display: flex;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#quiz-name h1 {
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 75%;
+    margin: auto;
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    padding: 10px;
+    color: black;
+}
+#author {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 18px;
+}
+#introduction h2 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+#box-start {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    text-align: center;
+    margin: auto;
+}
+#box-start h2 {
+    margin: 18px;
+}
+#btn-start {
+    background-color: #2196F3;
+    color: white;
+    padding: 18px;
+    margin: 18px;
+    border: 0;
+}
+#btn-start:hover {
+    background-color:#0d8bf2;
+}
+.option-list {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+}
+input {
+    margin-right: 15px;
+    float: left;
+}
+.option {
+    margin-top: 1px;
+    padding: 15px;
+    background-color: #f1f1f1;
+}
+#attempt-quiz .option:hover {
+    background-color: #ddd;
+}
+.option-selected {
+    margin-top: 1px;
+    padding: 15px;
+    background-color: #ddd;
+}
+#box-submit {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+#btn-submit {
+    background-color: #4CAF50;
+    padding: 18px;
+    margin: 18px;
+    color: white;
+    border: 0;
+}
+#btn-submit:hover {
+    background-color: #46a049;
+}
+.wrong-answer {
+    margin-top: 1px;
+    padding: 15px;
+    background-color:  #f8d7da;
+}
+.correct-answer {
+    margin-top: 1px;
+    padding: 15px;
+    background-color:  #d4edda;
+}
+.option-correct {
+    margin-top: 1px;
+    padding: 15px;
+    background-color: #ddd;
+}
+label {
+    position: relative;
+}
+label label {
+    background-color:  rgba(0,0,0, 0.2);
+    position: absolute;
+    right: 15px;
+    color: white;
+}
+#box-result {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+#btn-try-again {
+    background-color: #2196F3;
+    color: white;
+    padding: 18px;
+    margin: 18px;
+    border: 0;
+}
+#btn-try-again:hover {
+    background-color:#0d8bf2;
+}
+.score {
+    font-size: 24px;
+}
+.percent {
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    body {
+        width: 95%;  
+        margin: auto;   
+    }
+    #quiz-name {
+        width: auto;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .stack-circle {
+        display: none;
+    }
+}
